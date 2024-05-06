@@ -1,11 +1,16 @@
 import React from 'react'
-import Available from '../components/Available'
-import '../App.css';
+import './Pages.css';
 
 function Home() {
   return (
     <div>
-      Hi there!
+
+      <div className = "page-header">
+        <span className="heading">Hi There! <br /> My name's Nathalie...</span>
+        <br></br>
+        <span className= "heading-details">I'm a passionate Software Engineer dedicated to building and continous learning.</span>
+      </div>
+      
     </div>
   )
 }
