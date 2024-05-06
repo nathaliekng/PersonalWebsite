@@ -1,0 +1,32 @@
+.afw{
+    box-sizing: border-box;
+    position:relative;
+    padding-bottom: 20%;
+    height: 0;
+}
+.afw .available-container{
+    background: #E9FCF4;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 5px;
+    width: 155px;
+    height: 30px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+}
+
+.afw .available-container .available-circle{
+    background: #19B373;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    margin: 5px;
+}
+
+.afw .available-container .available-text{
+    font-size: 14px;
+    font-weight: 600;
+    box-sizing: border-box;
+    color: #38BE86;
+}

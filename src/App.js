@@ -7,6 +7,7 @@ import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import {useState} from 'react';
+import Available from './components/Available'
 
 function App() {
   const [inactive, setInactive] = useState(false);

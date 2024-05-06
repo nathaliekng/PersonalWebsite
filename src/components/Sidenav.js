@@ -36,8 +36,12 @@ function Sidenav(props) {
   return (
     <div className={`side-menu ${inactive ? "inactive": ""}`}>
         <div className="side-header">
-          <div className="logo">
-            <img src={logo} alt="webscript" />
+          <div className={`logo ${inactive ? "inactive": ""}`}>
+            {inactive ? <div><header className="initials">NN</header></div> : 
+            <div className="details">
+              <header className="myname">Nathalie Ng</header>
+              <span className="mytitle">Software Developer</span>
+            </div>}
           </div>
           <div onClick={()=> setInactive(!inactive)} className="collapse-nav">
             {inactive ? <PiArrowSquareRightThin/> : <PiArrowSquareLeftThin/>}
@@ -61,6 +65,7 @@ function Sidenav(props) {
         </div>
         
         <div className="side-menu-footer">
+          <div className= "divider"></div>
           <div className="footer-icon">
             <MdOutlineLightMode/>
           </div>
