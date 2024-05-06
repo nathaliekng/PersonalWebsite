@@ -5,14 +5,9 @@ import '../App.css';
 function About() {
   return (
     <div>
-      <Available />
-      <div className="home">
-        <div className="home-heading">
-          <span>About</span>
-        </div>
-      </div>
+      About
     </div>
   )
-}
+} 
 
 export default About

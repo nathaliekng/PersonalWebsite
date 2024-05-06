@@ -5,13 +5,8 @@ import '../App.css';
 function Projects() {
   return (
     <div>
-      <Available />
-      <div className="home">
-        <div className="home-heading">
-          <span>Projects</span>
-        </div>
-      </div>
-    </div>
+    Projects
+  </div>
   )
 }
 

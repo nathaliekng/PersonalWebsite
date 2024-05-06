@@ -28,6 +28,7 @@ const menuItems = [
 
 function Sidenav(props) {
   const [inactive, setInactive] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     props.onCollapse(inactive)
@@ -64,12 +65,12 @@ function Sidenav(props) {
           </ul>
         </div>
         
-        <div className="side-menu-footer">
+        {/* <div className="side-menu-footer">
           <div className= "divider"></div>
-          <div className="footer-icon">
-            <MdOutlineLightMode/>
+          <div onClick={()=> setDarkMode(!darkMode)} className="dark-mode-icon">
+            {inactive ? <MdOutlineDarkMode/> : <MdOutlineLightMode/>}
           </div>
-        </div>
+        </div> */}
 
 
 

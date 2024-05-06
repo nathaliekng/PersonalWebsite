@@ -5,15 +5,8 @@ import '../App.css';
 function Home() {
   return (
     <div>
-      <Available />
-      <div className="home">
-        <div className="home-heading">
-          <span>Hi there</span>
-        </div>
-      </div>
+      Hi there!
     </div>
-    
-    
   )
 }
 
