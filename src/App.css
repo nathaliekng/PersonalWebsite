@@ -72,14 +72,20 @@ body{
     font-size: 40px;
     color: #333;
     position: absolute;
-    top: 70%;
+    top: 90%;
     right: 0;
-    transform: translateY(-70%);
+    transform: translateY(-90%);
     cursor: pointer;
 }
 
 .side-menu.inactive .side-header .collapse-nav{
-    
+    font-size: 40px;
+    color: #333;
+    position: absolute;
+    top: 70%;
+    right: 0;
+    transform: translateY(-70%);
+    cursor: pointer;
 }
 
 .side-menu .side-main .main-item{
