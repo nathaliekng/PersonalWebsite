@@ -15,6 +15,7 @@ import { MdLightMode } from "react-icons/md";
 import { MdOutlineLightMode } from "react-icons/md";
 import { MdDarkMode } from "react-icons/md";
 import { MdOutlineDarkMode } from "react-icons/md";
+import { GoStack } from "react-icons/go";
 import MenuItem from "./MenuItem.js";
 
 
@@ -22,6 +23,7 @@ import MenuItem from "./MenuItem.js";
 const menuItems = [
   {name: "Home", to: "/", Icon: GoHome},
   {name: "About Me", to: "/about", Icon: GoPerson},
+  {name: "Stack", to: "/stack", Icon: GoStack},
   {name: "Projects", to: "/projects", Icon: MdOutlineWorkOutline},
   {name: "Contact", to: "/contact", Icon: IoMailOutline},
 ]

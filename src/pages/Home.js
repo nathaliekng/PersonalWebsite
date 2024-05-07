@@ -1,14 +1,35 @@
 import React from 'react'
 import './Pages.css';
+import { IoMdArrowDropright } from "react-icons/io";
+import {NavLink} from "react-router-dom";
+import RedirectButton from '../components/RedirectButton';
+
 
 function Home() {
   return (
-    <div>
-
+    <div className="pages">
       <div className = "page-header">
-        <span className="heading">Hi There! <br /> My name's Nathalie...</span>
-        <br></br>
-        <span className= "heading-details">I'm a passionate Software Engineer dedicated to building and continous learning.</span>
+        <div className="heading">
+          <div>Hi there!</div>
+          <div>My name is Nathalie...</div>
+        </div>
+        <div className="heading-details">
+          <div>I'm a passionate Software Engineer dedicated to building and continous learning.</div>
+        </div>
+
+        <div>
+        <RedirectButton
+            name="More About Me"
+            to="/about"
+            className="page-redirect-container"
+        />    
+        </div>  
+
+        
+      </div>
+
+      <div className = "page-body">
+
       </div>
       
     </div>

@@ -6,6 +6,7 @@ import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
+import Stack from "./pages/Stack";
 import {useState, createContext} from 'react';
 import Available from './components/Available'
 import ReactSwitch from 'react-switch';
@@ -45,6 +46,7 @@ function App() {
               <Route path="/contact" element={<Contact />} />
               <Route path="/about" element={<About />} />
               <Route path="/projects" element={<Projects />} />
+              <Route path="/stack" element={<Stack />} />
               <Route path="*" element={<PageNotFound/>}/>
           </Routes>
         </div>

@@ -2,6 +2,9 @@
     margin:0;
     padding:0;
 }
+html {
+    overflow-x: hidden;
+}
 #light {
     background-color:#FFFFFF
 }
@@ -101,16 +104,22 @@ body{
 }
 
 .side-menu .side-main .main-item{
-    color: black;
+    color: #777777;
     text-decoration: none;
     font-size: 15px;
     display: block;
-    font-weight: 600;   
+    font-weight: 400;   
     cursor: pointer;
     margin: 10% 0;
     text-align: center;
     transform: translateX(-15%);
+    
 }
+
+.side-menu .side-main .main-item:hover{
+    color: black;
+}
+
 
 .side-menu .main-menu {
     margin: 5px 0;

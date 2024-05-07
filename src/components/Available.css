@@ -1,7 +1,6 @@
 .afw{
     box-sizing: border-box;
     position:relative;
-    padding-bottom: 5%;
     height: 0;
 }
 .afw .available-container{
