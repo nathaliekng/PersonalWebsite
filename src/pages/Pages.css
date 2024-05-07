@@ -2,9 +2,9 @@
  height:100%; 
 }
 .pages .page-header {
-    height: 300px;
+    height: 35%;
     width: 100%;
-    padding: 10px;
+    padding: 10px 0 30px 0;
     box-sizing: border-box;
     border-bottom: 1px solid #E6E6E6;
     display: inline-block;
@@ -16,6 +16,7 @@
 }
 .pages .page-header .heading-details {
     padding-top: 20px;
+    padding-bottom: 10px;
     color: #777777;
 }
 
@@ -115,4 +116,44 @@
     overflow: hidden;
     vertical-align: top;
     color: #777777;
+}
+
+.contact-container{
+    height: 32%;
+    width: 100%;
+    padding: 40px 0 60px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #E6E6E6;
+}
+
+.contact-container .sub-container{
+    height: 100%;
+    width: 50%;
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: left;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.contact-container .heading{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.contact-item{
+    color: #777777;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;   
+    cursor: pointer;
+    vertical-align: top;
+}
+
+.contact-icon{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    line-height: 45px;
 }
