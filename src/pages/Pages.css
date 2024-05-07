@@ -108,6 +108,7 @@
 }
 
 .pages .about-experience-container .experience-subcontainer .job-description{
+    padding-right: 50px;
     height: 100%;
     width: 50%;
     box-sizing: border-box;
