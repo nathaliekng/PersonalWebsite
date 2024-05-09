@@ -5,12 +5,14 @@ import {NavLink} from "react-router-dom";
 const SocialsButton = (props) => {
     const {name, Icon, to, iconClass, itemClass} = props;
   return (
-    <li>
-        <NavLink end to={to} target='_blank' className={itemClass} >
+    <li className={itemClass}>
+        <NavLink end to={to} target='_blank' className={itemClass}>
+          <div className="flex-container">
             <div className={iconClass}>
-                <Icon/>
+                  <Icon/>
+              </div>
+              <span>{name}</span>
             </div>
-            <span>{name}</span>
         </NavLink>
     </li>
   )

@@ -148,20 +148,19 @@
     font-size: 15px;
     font-weight: 400;   
     cursor: pointer;
-    vertical-align: top;
+    width: 30%;
 }
 
 .contact-icon{
-    display: inline-block;
     width: 40px;
     height: 40px;
     font-size: 20px;
-    line-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
 }
 
-table, th, td {
-    padding: 15px;
-}
 
 .stackContainer{
     display: inline-block;
@@ -253,4 +252,8 @@ table, th, td {
     background: black;
     color: white;
     border: none;
+}
+
+.contact-subcontainer{
+    margin: 0 0 50px 0;
 }

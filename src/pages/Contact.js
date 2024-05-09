@@ -16,6 +16,12 @@ const socialsItems = [
 function Contact() {
   const form = useRef();
   const [confirmed, setConfirmed] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const copyToClipboard = () => {
+    setCopied(true);
+    navigator.clipboard.writeText('nathalie.ng@torontomu.ca');
+  }
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -60,34 +66,51 @@ function Contact() {
                 <input type="text" placeHolder="Subject" name="subject" required />
                 <textarea placeHolder="Message" name="message" required />
                 <input type="submit" value="Send Message" />
+
+                {confirmed ? "Your message has been sent" : ""}
               </form>
               
 
             </div>
           </div>
           <div className="sub-container">
-            <div className="heading">Contact</div>
-            <ul>
-              <li>
-                <span><AiOutlineMail/>nathalie.ng@torontomu.ca</span>
-              </li>
-            </ul>
-            <div className="heading">Socials</div>
-            <ul>
-            {
-              socialsItems.map((socialItem, index) => (
-                <SocialsButton 
-                  key={index} 
-                  name={socialItem.name}
-                  to={socialItem.to} 
-                  Icon={socialItem.Icon} 
-                  iconClass={socialItem.iconClass}
-                  itemClass={socialItem.itemClass}
-                />
-              ))
-            }
-          </ul>
-          </div>
+            <div className="contact-subcontainer">
+              <div className="heading">Contact</div>
+              <ul>
+                <li className="contact-item">
+                  <div className="flex-container">
+                    <div className="contact-icon">
+                    <AiOutlineMail/>
+                    </div>
+                    <span onClick={copyToClipboard}>nathalie.ng@torontomu.ca</span>
+                    
+                  </div>
+                  <div>{copied ? "Copied to clipboard" : ""}</div>
+
+                </li>
+              </ul>
+            </div>
+
+            <div className="contact-subcontainer">
+              <div className="heading">Socials</div>
+                <ul>
+                  {
+                    socialsItems.map((socialItem, index) => (
+                      <SocialsButton 
+                        key={index} 
+                        name={socialItem.name}
+                        to={socialItem.to} 
+                        Icon={socialItem.Icon} 
+                        iconClass={socialItem.iconClass}
+                        itemClass={socialItem.itemClass}
+                      />
+                    ))
+                  }
+                </ul>
+              </div>
+            </div>
+           
+            
         </span>
       </div>      
     </div>
