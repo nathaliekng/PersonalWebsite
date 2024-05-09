@@ -1,4 +1,5 @@
-import React from 'react'
+import React, {useRef} from 'react'
+import emailjs from '@emailjs/browser';
 import '../App.css';
 import { CiLinkedin } from "react-icons/ci";
 import { VscGithub } from "react-icons/vsc";
@@ -13,6 +14,27 @@ const socialsItems = [
 
 
 function Contact() {
+  const form = useRef();
+  
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_ocysv79', 'template_ycfeu9e', form.current, {
+        publicKey: '7Qov7QghvoELLqwLp',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          e.target.reset();
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+      
+  };
+
   return (
     <div className="pages">
       <div className = "page-header">
@@ -29,6 +51,16 @@ function Contact() {
         <span>
           <div className="sub-container">
             <div className="heading">Get In Touch</div>
+            <div className="contact-form">
+              <form ref={form} onSubmit={sendEmail}>
+                <input type="text" placeHolder="Name" name="user_name" required />
+                <input type="email" placeHolder="Email" name="user_email" required />
+                <input type="text" placeHolder="Subject" name="subject" required />
+                <input type="text" placeHolder="Message" name="message" required />
+                <button type="submit" className="">Submit</button>
+              </form>
+
+            </div>
           </div>
           <div className="sub-container">
             <div className="heading">Contact</div>

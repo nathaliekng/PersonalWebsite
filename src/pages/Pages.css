@@ -208,3 +208,10 @@ table, th, td {
     width: 50%;
     overflow: visible;
 }
+
+.contact-form{
+    display: flex;
+    justify-content: left;
+    direction: column;
+
+}
