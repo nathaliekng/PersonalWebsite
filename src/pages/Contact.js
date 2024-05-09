@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useState} from 'react'
 import emailjs from '@emailjs/browser';
 import '../App.css';
 import { CiLinkedin } from "react-icons/ci";
@@ -15,6 +15,7 @@ const socialsItems = [
 
 function Contact() {
   const form = useRef();
+  const [confirmed, setConfirmed] = useState(false);
   
   const sendEmail = (e) => {
     e.preventDefault();
@@ -27,6 +28,7 @@ function Contact() {
         () => {
           console.log('SUCCESS!');
           e.target.reset();
+          setConfirmed(true);
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -51,14 +53,15 @@ function Contact() {
         <span>
           <div className="sub-container">
             <div className="heading">Get In Touch</div>
-            <div className="contact-form">
-              <form ref={form} onSubmit={sendEmail}>
+            <div className="contact-form-container">
+              <form ref={form} onSubmit={sendEmail} className="contact-form">
                 <input type="text" placeHolder="Name" name="user_name" required />
                 <input type="email" placeHolder="Email" name="user_email" required />
                 <input type="text" placeHolder="Subject" name="subject" required />
-                <input type="text" placeHolder="Message" name="message" required />
-                <button type="submit" className="">Submit</button>
+                <textarea placeHolder="Message" name="message" required />
+                <input type="submit" value="Send Message" />
               </form>
+              
 
             </div>
           </div>

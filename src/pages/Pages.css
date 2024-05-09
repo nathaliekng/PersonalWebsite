@@ -209,9 +209,48 @@ table, th, td {
     overflow: visible;
 }
 
+.contact-form-container{
+    display: flex;
+    margin: 10px 0;
+}
+
 .contact-form{
     display: flex;
-    justify-content: left;
-    direction: column;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    font-size: 16px;
+}
 
+.contact-form input {
+    width: 90%;
+    height: 40px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    margin: 10px 0;
+    background: #FAFAFA;
+    box-sizing: border-box;
+}
+.contact-form textarea {
+    width: 90%;
+    resize: none;
+    height: 200px;
+    padding: 7px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+    margin: 10px 0;
+    font-family: "Inter", sans-serif;
+    background: #FAFAFA;
+    box-sizing: border-box;
+}
+.contact-form input[type="submit"] {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
 }
