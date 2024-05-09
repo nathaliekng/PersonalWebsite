@@ -34,8 +34,8 @@ function App() {
             setInactive(inactive);}}
         />
         <div className="switch">
-          <label className="theme-label"> {theme == "light" ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}</label>
-          <ReactSwitch onChange= {toggleTheme} checked={theme=="dark"}/>
+          {/* <label className="theme-label"> {theme == "light" ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}</label>
+          <ReactSwitch onChange= {toggleTheme} checked={theme=="dark"}/> */}
         </div>
         <div className={`avail-container ${inactive ? "inactive" : ""}`}>
           <Available/>
