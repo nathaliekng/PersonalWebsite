@@ -164,19 +164,19 @@ table, th, td {
 }
 
 .stackContainer{
-    display: grid;
+    display: inline-block;
     justify-content: center;
     padding: 50px;
     height: 32%;
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid #E6E6E6;
+    column-count: 2;
+    column-span: all;
 }
 
 .stackItemContainer{
-    display: table-cell;
-    padding: 25px 150px;
-    text-align: left;
+    padding: 25px 100px;
 }
 
 .stackItemContainer span{
@@ -200,4 +200,11 @@ table, th, td {
     justify-content: space-evenly;
     margin: 0 15px 0 0;
 
+}
+
+
+.stackOverflowContainer{
+    height: 100%;
+    width: 50%;
+    overflow: visible;
 }

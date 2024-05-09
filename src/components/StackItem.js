@@ -5,7 +5,7 @@ import { FaSquare } from "react-icons/fa6";
 const StackItem = (props) => {
     const {stackName, Icon} = props;
   return (
-        <td className="stackItemContainer">
+        <div className="stackItemContainer">
             <div className="flex-container">
                 <div className="iconContainer">
                     <Icon/>
@@ -14,7 +14,7 @@ const StackItem = (props) => {
                     {stackName}
                 </span>
             </div>
-        </td>
+        </div>
 
   )
 }
