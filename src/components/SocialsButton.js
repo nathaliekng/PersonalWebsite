@@ -6,7 +6,7 @@ const SocialsButton = (props) => {
     const {name, Icon, to, iconClass, itemClass} = props;
   return (
     <li className={itemClass}>
-        <NavLink end to={to} target='_blank' className={itemClass}>
+        <NavLink end to={to} target='_blank' className="nav">
           <div className="flex-container">
             <div className={iconClass}>
                   <Icon/>

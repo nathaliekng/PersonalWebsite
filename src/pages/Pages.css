@@ -147,8 +147,20 @@
     text-decoration: none;
     font-size: 15px;
     font-weight: 400;   
-    cursor: pointer;
     width: 30%;
+}
+
+.contact-item .flex-container span {
+    cursor: pointer;
+}
+
+.contact-item .nav {
+    color: #777777;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;   
+    display: inline-block;
+    
 }
 
 .contact-icon{
