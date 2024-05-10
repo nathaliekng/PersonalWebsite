@@ -23,7 +23,7 @@ function Sidenav(props) {
 
   useEffect(() => {
     props.onCollapse(inactive)
-  }, [inactive]);
+  }, [props, inactive]);
 
   return (
     <div className={`side-menu ${inactive ? "inactive": ""}`}>
