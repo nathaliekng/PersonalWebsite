@@ -1,6 +1,5 @@
 import React from 'react'
 import StackItem from '../components/StackItem'
-import { GoHome } from "react-icons/go";
 import { FaJava } from "react-icons/fa";
 import { RiJavascriptLine } from "react-icons/ri";
 import { AiOutlinePython } from "react-icons/ai";

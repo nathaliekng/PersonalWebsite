@@ -1,6 +1,6 @@
 import './App.css';
 import Sidenav from './components/Sidenav.js';
-import {BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
@@ -9,9 +9,9 @@ import Projects from "./pages/Projects";
 import Stack from "./pages/Stack";
 import {useState, createContext} from 'react';
 import Available from './components/Available'
-import ReactSwitch from 'react-switch';
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdOutlineDarkMode } from "react-icons/md";
+// import ReactSwitch from 'react-switch';
+// import { MdOutlineLightMode } from "react-icons/md";
+// import { MdOutlineDarkMode } from "react-icons/md";
 
 export const ThemeContext = createContext(null);
 
@@ -20,7 +20,7 @@ function App() {
 
   const [theme, setTheme] = useState("light");
   const toggleTheme = () => {
-    setTheme((curr) => (curr == "light" ? "dark" : "light"));
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
   }
   return (
     <ThemeContext.Provider value={{theme, toggleTheme}}>
@@ -34,8 +34,8 @@ function App() {
             setInactive(inactive);}}
         />
         <div className="switch">
-          {/* <label className="theme-label"> {theme == "light" ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}</label>
-          <ReactSwitch onChange= {toggleTheme} checked={theme=="dark"}/> */}
+          {/* <label className="theme-label"> {theme === "light" ? <MdOutlineLightMode/> : <MdOutlineDarkMode/>}</label>
+          <ReactSwitch onChange= {toggleTheme} checked={theme==="dark"}/> */}
         </div>
         <div className={`avail-container ${inactive ? "inactive" : ""}`}>
           <Available/>

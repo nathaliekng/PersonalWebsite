@@ -1,20 +1,10 @@
 import React, {useState, useEffect} from 'react'
-import logo from "../assets/logo.png"
 import { PiArrowSquareLeftThin } from "react-icons/pi";
 import { PiArrowSquareRightThin } from "react-icons/pi";
 import { GoHome } from "react-icons/go";
-import { GoHomeFill } from "react-icons/go";
 import { GoPerson } from "react-icons/go";
-import { GoPersonFill } from "react-icons/go";
 import { MdOutlineWorkOutline } from "react-icons/md";
-import { MdOutlineWork } from "react-icons/md";
-import { CiMail } from "react-icons/ci";
 import { IoMailOutline } from "react-icons/io5";
-import { IoMailOpen } from "react-icons/io5";
-import { MdLightMode } from "react-icons/md";
-import { MdOutlineLightMode } from "react-icons/md";
-import { MdDarkMode } from "react-icons/md";
-import { MdOutlineDarkMode } from "react-icons/md";
 import { GoStack } from "react-icons/go";
 import MenuItem from "./MenuItem.js";
 
@@ -30,7 +20,6 @@ const menuItems = [
 
 function Sidenav(props) {
   const [inactive, setInactive] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
     props.onCollapse(inactive)

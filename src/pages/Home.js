@@ -1,7 +1,5 @@
 import React from 'react'
 import './Pages.css';
-import { IoMdArrowDropright } from "react-icons/io";
-import {NavLink} from "react-router-dom";
 import RedirectButton from '../components/RedirectButton';
 
 
