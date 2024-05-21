@@ -55,10 +55,12 @@ body{
 
 .side-menu .side-header .logo .initials{
     font-weight: 600;
+    cursor: default;
 }
 .side-menu .side-header .logo .details {
     white-space: nowrap;
     overflow: hidden;
+    cursor: default;
 }
 .side-menu .side-header .logo .details .myname {
     padding: 10px;

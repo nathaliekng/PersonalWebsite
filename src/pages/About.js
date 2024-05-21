@@ -1,14 +1,40 @@
 import React from 'react'
 import './Pages.css';
+import profilePhoto from '../assets/profile.jpg';
+import Resume from "../assets/NathalieNg_Resume.pdf";
 import RedirectButton from '../components/RedirectButton';
+import DownloadButton from '../components/DownloadButton';
+
 
 function About() {
   return (
     <div className="pages">
-      <div className = "page-header">
-        <div className="heading">About Me</div>
-        <div className="heading-details">Hi, I'm Nathalie, a recent Computer Science graduate with a focus on software development.</div>
-      </div>
+      <div className = "about-header">
+        <span>
+          <div className="about-details">
+          
+          <div className="heading">
+            About Me
+          </div>
+          <div className="heading-details">
+            Hi, I'm Nathalie, a recent Computer Science graduate with a focus on Software Engineering/Development.
+          </div>
+          <div>
+            <DownloadButton
+                name="Download Resume"
+                file={Resume}
+                className="page-redirect-container"
+                downloadName="NathalieNg_Resume"
+            />    
+          </div>  
+
+          </div>
+          <div className="about-details-image">
+          <img src={profilePhoto} alt =""/>
+          </div>
+
+        </span>
+        </div>
 
       <div className="about-details-container">
         <span>
