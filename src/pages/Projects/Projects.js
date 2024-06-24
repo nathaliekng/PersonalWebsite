@@ -3,10 +3,11 @@ import ProjectButton from '../../components/ProjectButton';
 import '../Pages.css';
 import './Projects.css';
 import careerCraftPreview from '../../assets/projects/CareerCraftAIPreview.png'
+import duosPreview from '../../assets/projects/DuosPreview.png'
 
 const projects = [
   {name:"CareerCraftAI", preview: careerCraftPreview, to: "https://pollen-reason-fb3.notion.site/CareerCraftAI-Stage-1-d4ba5eb1f91447b8950396bdaeed4d2d?pvs=4", className:"projectitem-container"},
-  
+  {name:"Duos", preview: duosPreview, to: "https://pollen-reason-fb3.notion.site/Duos-720722f570b642d7a09f4df164571d82?pvs=4", className:"projectitem-container"},
 ];
 
 function Projects() {

@@ -5,7 +5,7 @@ const ProjectButton = (props) => {
     const {name, preview, to, className} = props;
   return (
         <NavLink end to={to} target="_blank" className={className}>
-            <div>
+            <div >
             <div>{name}</div>
             <div>
             <img src={preview} alt="preview"/>
