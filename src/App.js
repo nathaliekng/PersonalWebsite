@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import PageNotFound from "./pages/PageNotFound";
 import About from "./pages/About";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects/Projects";
 import Stack from "./pages/Stack";
 import {useState, createContext} from 'react';
 import Available from './components/Available'
